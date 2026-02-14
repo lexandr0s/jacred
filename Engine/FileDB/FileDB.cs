@@ -42,7 +42,10 @@ namespace JacRed.Engine
                     savechanges = true;
 
                     if (updatetime)
+                    {
                         t.updateTime = DateTime.UtcNow;
+                        t.ffprobe_tryingdata = 0;
+                    }
 
                     if (uptfull)
                         updateFull = true;
